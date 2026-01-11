@@ -160,7 +160,7 @@ Le fichier Excel original a ensuite été **mis au propre** : suppression de lig
   
   
 
-## Visualisation — ECG inversé
+## Visualisation principale | Pouls du vivant en Suisse
 
   
 
@@ -230,7 +230,7 @@ C’est pour répondre à ces limites que j’ai voulu y remédier avec une seco
 
   
 
-## Visualisation 2 — Les Donuts
+## Visualisation 2 | Les Donuts
 
  Les Donuts voient le jour lorsque je réalise les limites de ma visualisation principale. Ainsi, c'est pour y répondre et pour avoir un message plus clair (et large) de la situation que je me décide à les faire.  
 
@@ -255,7 +255,7 @@ Cette visualisation offre une lecture **plus globale** (ce qui était l’object
 
   
 
-## Visualisation 3 — Flux
+## Visualisation 3 | Flux
 
 
 Ainsi, **Flux** voit le jour. C’est en me baladant sur Observable que je suis tombé sur des visualisations de type **Sankey**, et l’idée m’a immédiatement intéressé : ce format donne la possibilité de **représenter des trajectoires**, c’est-à-dire de suivre le passage d’un groupe d’organismes à travers plusieurs catégories successives.
@@ -272,4 +272,5 @@ Néanmoins, c’est la visualisation que j’aime le moins, et je pense que cela
 
 Ainsi, ce projet explore trois approches complémentaires pour représenter une même réalité : la pression qui s’exerce sur la biodiversité suisse. 
 Ces visualisations fonctionnent finalement comme un ensemble : l’une met l’accent sur l’impact et l’individu au travers d'un biais assumé, la seconde sur une synthèse plus globale, et la troisième sur les relations entre catégories. Elles rappellent surtout qu’il n’existe pas forcément de représentation “parfaite”, mais plutôt des choix de mise en scène et de lisibilité, chacun avec ses compromis.
+
 
