@@ -1,0 +1,249 @@
+/*
+Le CSS a entièrement été effectué à l'aide de CHATGPT 5.2 Thinking. 
+*/
+    
+    
+    body { 
+      margin: 0; 
+      font-family: system-ui, 
+      -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+      background: #0b0b0b; 
+      color: #eaeaea; 
+    }
+    #wrap { 
+      width: 100vw; 
+      height: 100vh; 
+      display: grid; 
+      place-items: center; 
+    }
+    #title{
+      margin: 0;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    svg { 
+      width: min(1200px, 96vw); 
+      height: 360px; 
+      border: 1px solid rgba(255,255,255,0.08); 
+      background: transparent; 
+    }
+    .line { fill: none;
+      stroke: rgba(161, 11, 11, 0.9);
+       stroke-width: 2; 
+    }
+    .baseline { 
+      stroke: rgba(255,255,255,0.15); 
+      stroke-width: 0; 
+    }
+    .marker { fill: rgba(255,255,255,0.9);
+       stroke: rgba(0,0,0,0.4);
+        stroke-width: 1; 
+        cursor: pointer; 
+    }
+    .cursor-line { 
+      stroke: rgba(255,255,255,0.25); 
+      stroke-width: 1; 
+      stroke-dasharray: 4 4; 
+    }
+    .tooltip {
+      pointer-events: none;
+      fill: rgba(10,10,10,0.86);
+      stroke: rgba(255,255,255,0.12);
+      stroke-width: 1;
+    }
+    .tooltip-text { fill: rgba(255,255,255,0.92); font-size: 12px; }
+    .tooltip-muted { fill: rgba(255,255,255,0.55); font-size: 11px; }
+    
+    .controls{
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+    }
+
+    .controls button{
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.92);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .controls button:hover{
+      background: rgba(255,255,255,0.12);
+    }
+    .navRight{
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      display: flex;
+      gap: 10px;
+      z-index: 9999;
+    }
+    .navBtn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.92);
+    border: 1px solid rgba(255,255,255,0.14);
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font: inherit;
+    margin-left: 10px;
+    }
+
+
+    .navBtn:hover{
+    background: rgba(255,255,255,0.12);
+    }
+
+    .pause-btn{
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.92);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font: inherit;
+    }
+
+      .pause-btn:hover{
+        background: rgba(255,255,255,0.12);
+      }
+
+
+    #stack { 
+      width: min(1200px, 96vw);
+      display: grid; 
+      gap: 12px;
+    }
+    #stack #pauseBtn{
+      justify-self: center;   /* évite l’étirement horizontal en grid */
+      width: fit-content;    /* garde la taille “au texte” */
+    }
+    #details{
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    #details button{
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.92);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 8px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font: inherit;
+    }
+    #details button:hover{ background: rgba(255,255,255,0.12); 
+    }
+    #detailsTitle{
+      flex: 1;
+      text-align: center;
+    }
+
+
+.titleRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;              /* distance titre <-> bouton */
+}
+.titleRow #title{
+  width: auto;            /* important : ne pas prendre toute la largeur */
+}
+
+
+/* bouton info */
+.info-btn{
+  /*
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  */
+
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.92);
+  border: 1px solid rgba(255,255,255,0.14);
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+}
+
+.info-btn:hover{
+  background: rgba(255,255,255,0.12);
+}
+
+/* panneau info (style proche de #details) */
+.info-Dialog{
+  position: fixed;
+  inset: 0;
+  z-index: 99999; /* au-dessus de tout */
+  display: grid;
+  place-items: center;
+}
+
+.info-backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(2px);
+}
+
+.info-card{
+  position: relative;
+  width: min(720px, 92vw);
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(20,20,20,0.92);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+.info-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.info-title{
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+}
+
+.info-card button{
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.92);
+  border: 1px solid rgba(255,255,255,0.14);
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+}
+.info-card button:hover{ background: rgba(255,255,255,0.12); }
+
+.info-body{ margin-top: 10px; }
+
+/* IMPORTANT: respecte l'attribut hidden sinon le panneau commence ouvert. */
+.info-Dialog[hidden]{
+  display: none !important;
+}

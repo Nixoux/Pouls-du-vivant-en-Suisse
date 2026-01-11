@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pouls du vivant en Suisse</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="wrap">
+      <div id="stack"><div class="titleRow">
+      <h1 id="title">Pouls du vivant en Suisse</h1>
+
+      <button
+        id="infoBtn"
+        class="info-btn"
+        type="button"
+        aria-label="Informations"
+        title="Informations"
+      >
+        i
+      </button>
+    </div>
+
+
+        <!-- Panneau informatif. Ce panneau, autant dans l'HTML, CSS et JS, a été principalement généré par ChatGPT 5.2 Thinking. -->
+    <div id="infoDialog" class="info-Dialog" hidden>
+      <div class="info-backdrop" data-close="1"></div>
+
+      <div class="info-card" role="dialog" aria-modal="true" aria-labelledby="infoDialogTitle">
+        <div class="info-head">
+          <div id="infoDialogTitle" class="info-title">Informations</div>
+          <button id="closeInfo" type="button">Fermer</button>
+        </div>
+
+        <div class="info-body">
+            
+          <p style="margin:0 0 10px 0; line-height:1.45;">
+            Cette visualisation illustre un pouls basé sur les statistiques de l’<strong>état de la biodiversité suisse</strong> publié par l'Office fédéral de la statistique (OFS) le 14 juillet 2025.
+            Chaque pic correspond à une espèce et l’amplitude reflète son degré de menace.
+          </p>
+
+            <ul style="margin:0; padding-left:18px; line-height:1.45;">
+              <li><strong>Survol</strong> : infos rapides</li>
+              <li><strong>Clic</strong> : détails complets</li>
+              <li><strong>Pause</strong> : stoppe l’animation</li>
+            </ul>
+            <break></break>
+          <p style="margin:0 0 10px 0; line-height:1.45;">
+            Des visualisations supplémentaires sont disponibles en haut à droite.
+          </p> 
+
+        </div>
+      </div>
+    </div>
+
+    
+    <button id="pauseBtn" class="pause-btn" type="button">Pause</button>
+
+    
+    <svg id="viz" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid meet"></svg>
+
+    <div id="details" style="display:none;">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+        <div id="detailsTitle" style="font-weight:600;"></div>
+        <button id="closeDetails" type="button">Fermer</button>
+      </div>
+      <div id="detailsBody" style="margin-top:10px; line-height:1.45;"></div>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="navRight">
+    <a class="navBtn" href="./HmmmmdesDonuts/index.html">Donut</a>
+    <a class="navBtn" href="./FluxCapacitor/index.html">Flux</a>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="./main.js"></script>
+</body>
+</html>

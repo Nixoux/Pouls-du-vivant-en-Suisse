@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flux</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>Relation entre le groupe d'organisme, son degré de menace, son urgence et sa surveillance actuelle.</h1>
+        <div class="sub">
+          Survole un flux ou un bloc pour voir les volumes.
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label for="groupFilter">Filtre groupe d'organisme</label>
+        <select id="groupFilter"></select>
+
+        <label for="minFlow">Flux min</label>
+        <input id="minFlow" type="number" min="1" step="1" value="1" style="width:90px;" />
+
+        <span class="badge" id="countBadge">—</span>
+                
+        <a class="back" href="../index.html">Retour</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="vizWrap">
+        <svg id="sankey"></svg>
+      </div>
+      <div class="hint">Astuce : augmente “Flux min” (ex: 5 / 10) pour simplifier si c’est trop dense.</div>
+    </div>
+  </div>
+
+  <div id="tooltip" class="tooltip"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

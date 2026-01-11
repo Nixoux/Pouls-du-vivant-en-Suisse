@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donuts</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <h1>Donuts</h1>
+      <div class="controls">
+        <label style="font-size:12px; color:rgba(255,255,255,0.75);">Groupe d'organisme</label>
+        <select id="groupSelect"></select>
+        <a class="back" href="../index.html">Retour</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="cardTitle">Degré de menace selon liste rouge ou estimation d'expert</div>
+        <div class="row">
+          <svg id="donutMenace" viewBox="0 0 320 320"></svg>
+          <div id="legendMenace" class="legend"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="cardTitle">Besoin d'action à l'échelle nationale</div>
+        <div class="row">
+          <svg id="donutUrgence" viewBox="0 0 320 320"></svg>
+          <div id="legendUrgence" class="legend"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="cardTitle">Surveillance des populations</div>
+        <div class="row">
+          <svg id="donutSurv" viewBox="0 0 320 320"></svg>
+          <div id="legendSurv" class="legend"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+    <div id="tooltip" class="chart-tooltip" style="display:none;"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

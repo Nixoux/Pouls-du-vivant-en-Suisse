@@ -1,0 +1,120 @@
+/*
+Le CSS a entièrement était effectué à l'aide de CHATGPT 5.2 Thinking. 
+*/
+   
+   body{
+        margin:0;
+        font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+        background:#0b0b0b;
+        color:#eaeaea
+    }
+    .wrap{
+        max-width:1500px
+        ;margin:0 auto;
+        padding:18px 18px 28px
+    }
+    .topbar{
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        gap:12px;
+        margin-bottom:12px;
+        flex-wrap:wrap
+    }
+    h1{
+        margin:0;
+        font-size:16px;
+        font-weight:650;
+        opacity:.95
+    }
+    .sub{
+        margin:6px 0 0;
+        font-size:12px;
+        color:rgba(255,255,255,.65);
+        max-width:920px
+    }
+    .card{
+        border:1px solid rgba(255,255,255,.12);
+        background:rgba(255,255,255,.04);
+        border-radius:14px;
+        padding:14px
+    }
+    .toolbar{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        flex-wrap:wrap
+    }
+    label{
+        font-size:12px;
+        color:rgba(255,255,255,.75)
+    }
+    select,input{
+        background:rgba(255,255,255,.10);
+        color:rgba(255,255,255,.92);
+        border:1px solid rgba(255,255,255,.18);
+        padding:10px 12px;
+        border-radius:10px;
+        font:inherit;
+        outline:none
+    }
+    select option{
+        background:#0b0b0b;
+        color:rgba(255,255,255,.92)
+    }
+    .hint{
+        margin-top:10px;
+        font-size:12px;
+        color:rgba(255,255,255,.55)
+    }
+    .vizWrap{
+        margin-top:12px
+        ;overflow:auto;
+        border-radius:12px;
+        border:1px solid rgba(255,255,255,.08);
+        background:rgba(0,0,0,.10)
+    }
+    svg{
+        display:block
+    }
+    .node rect{
+        stroke:rgba(0,0,0,.45);
+        stroke-width:1;rx:6;ry:6
+    }
+    .link{
+        fill:none;
+        stroke-opacity:.35;
+        mix-blend-mode:screen
+    }
+    .tooltip{
+      position:fixed;z-index:9999;pointer-events:none;padding:8px 10px;border-radius:10px;
+      border:1px solid rgba(255,255,255,.14);background:rgba(10,10,10,.92);
+      color:rgba(255,255,255,.95);font-size:13px;line-height:1.25;max-width:420px;
+      box-shadow:0 8px 24px rgba(0,0,0,.35);display:none
+    }
+    .badge{
+        display:inline-block;
+        padding:2px 8px;
+        border-radius:999px;
+        border:1px solid rgba(255,255,255,.14);
+        background:rgba(255,255,255,.06);
+        font-size:12px;
+        color:rgba(255,255,255,.85)
+    }
+    .back{
+        text-decoration:none;
+        background: rgba(255,255,255,0.08);
+        color: rgba(255,255,255,0.92);
+        border: 1px solid rgba(255,255,255,0.14);
+        padding: 10px 12px;
+        border-radius: 10px;
+        font: inherit;
+    }
+    .stageLegendText{
+    fill: rgba(255,255,255,0.82);
+    font-size: 12px;
+    font-weight: 700;
+    }
+
+
+
