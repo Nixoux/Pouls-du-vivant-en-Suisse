@@ -18,7 +18,6 @@ Plutôt que de chercher une représentation strictement “neutre”, ce travail
 
   
 
----
 
   
 
@@ -273,3 +272,4 @@ Néanmoins, c’est la visualisation que j’aime le moins, et je pense que cela
 
 Ainsi, ce projet explore trois approches complémentaires pour représenter une même réalité : la pression qui s’exerce sur la biodiversité suisse. 
 Ces visualisations fonctionnent finalement comme un ensemble : l’une met l’accent sur l’impact et l’individu au travers d'un biais assumé, la seconde sur une synthèse plus globale, et la troisième sur les relations entre catégories. Elles rappellent surtout qu’il n’existe pas forcément de représentation “parfaite”, mais plutôt des choix de mise en scène et de lisibilité, chacun avec ses compromis.
+
