@@ -278,11 +278,11 @@ Ces visualisations fonctionnent finalement comme un ensemble : l’une met l’a
 
 
 ## Usage de LLMs
-Au cours de ce projet, j’ai utilisé des LLMs (ChatGPT 5.2 Thinking) comme outil d’assistance.  J’ai tout d'abord sollicité le modèle après le brainstorming, une fois l’idée défini et l'angle choisi, afin de structurer les étapes de réalisation et identifier les éléments techniques à implémenter. Exemple de prompt utilisé: Par quelles étapes dois je passer pour faire ce fonctionnement: Une ligne qui est dessiné et qui "bouge" comme un éléctrocardiogramme. Cette ligne ayant des piques différents selon les risques d'extinctions. et en survolant un point la ligne arrête d'avancer mais continue si on survole plus le point.
+Au cours de ce projet, j’ai utilisé des LLMs (ChatGPT 5.2 Thinking) comme outil d’assistance.  J’ai tout d'abord sollicité le modèle après le brainstorming, une fois l’idée défini et l'angle choisi, afin de structurer les étapes de réalisation et identifier les éléments techniques à implémenter. *Exemple de prompt utilisé: Par quelles étapes dois je passer pour faire ce fonctionnement: Une ligne qui est dessiné et qui "bouge" comme un éléctrocardiogramme. Cette ligne ayant des piques différents selon les risques d'extinctions. et en survolant un point la ligne arrête d'avancer mais continue si on survole plus le point.*
 
 Le CSS a été principalement généré avec, puis ajusté pour correspondre à l’identité visuelle du projet.
 
-Enfin, pour le JavaScript/D3, ChatGPT m’a aidé ponctuellement sur des fonctions utilitaires et des choix d’implémentation (ex. clamp, shuffle déterministe/Fisher-Yates, correction d'erreur et aide à la compréhension), tandis que la logique globale, l’intégration des données et la direction artistique restent basées sur mes propres décisions et itérations. Exemple de prompt utilisé: Peut tu me créer un bouton information près du titre? [+ tout le code lui a été fourni]
+Enfin, pour le JavaScript/D3, ChatGPT m’a aidé ponctuellement sur des fonctions utilitaires et des choix d’implémentation (ex. clamp, shuffle déterministe/Fisher-Yates, correction d'erreur et aide à la compréhension), tandis que la logique globale, l’intégration des données et la direction artistique restent basées sur mes propres décisions et itérations. *Exemple de prompt utilisé: Peut tu me créer un bouton information près du titre? [+ tout le code lui a été fourni]* 
 
 ## Remerciement
 Je voulais surtout remercier Florian Rieder, Nicolas Bovet, Valentine Cuenot, Chloé Chaudet et Théo Rochat pour leurs retours lors de la réalisation de ce travail.
