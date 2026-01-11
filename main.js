@@ -355,7 +355,7 @@ let svg = d3.select("#viz");
 
 // Image de fond (placée derrière tout)
 svg.insert("image", ":first-child")
-  .attr("href", "./Background-DataViz-VarJaune.PNG")
+  .attr("href", "./img/Background-DataViz-VarJaune.PNG")
   .attr("x", 0)
   .attr("y", 0)
   .attr("width", W)

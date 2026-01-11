@@ -3,7 +3,7 @@
 
 # Visualisation de données sur la biodiversité suisse
 
-![Capture d'écran](Capture%20d'écran.png)
+![Capture d'écran](img/Capture%20d'écran.png)
 
 
   
@@ -232,6 +232,8 @@ C’est pour répondre à ces limites que j’ai voulu y remédier avec une seco
 
 ## Visualisation 2 | Les Donuts
 
+![Capture d'écran](img/Capture%20d'écran%20Donuts.png)
+
  Les Donuts voient le jour lorsque je réalise les limites de ma visualisation principale. Ainsi, c'est pour y répondre et pour avoir un message plus clair (et large) de la situation que je me décide à les faire.  
 
 Cette visualisation met en avant **trois informations** que je trouve parmi les plus intéressantes pour chaque **groupe d’organismes** :
@@ -257,6 +259,7 @@ Cette visualisation offre une lecture **plus globale** (ce qui était l’object
 
 ## Visualisation 3 | Flux
 
+![Capture d'écran](img/Capture%20d'écran%20Flux.png)
 
 Ainsi, **Flux** voit le jour. C’est en me baladant sur Observable que je suis tombé sur des visualisations de type **Sankey**, et l’idée m’a immédiatement intéressé : ce format donne la possibilité de **représenter des trajectoires**, c’est-à-dire de suivre le passage d’un groupe d’organismes à travers plusieurs catégories successives.
 
@@ -274,3 +277,12 @@ Ainsi, ce projet explore trois approches complémentaires pour représenter une 
 Ces visualisations fonctionnent finalement comme un ensemble : l’une met l’accent sur l’impact et l’individu au travers d'un biais assumé, la seconde sur une synthèse plus globale, et la troisième sur les relations entre catégories. Elles rappellent surtout qu’il n’existe pas forcément de représentation “parfaite”, mais plutôt des choix de mise en scène et de lisibilité, chacun avec ses compromis.
 
 
+## Usage de LLMs
+Au cours de ce projet, j’ai utilisé des LLMs (ChatGPT 5.2 Thinking) comme outil d’assistance.  J’ai tout d'abord sollicité le modèle après le brainstorming, une fois l’idée défini et l'angle choisi, afin de structurer les étapes de réalisation et identifier les éléments techniques à implémenter. Exemple de prompt utilisé: Par quelles étapes dois je passer pour faire ce fonctionnement: Une ligne qui est dessiné et qui "bouge" comme un éléctrocardiogramme. Cette ligne ayant des piques différents selon les risques d'extinctions. et en survolant un point la ligne arrête d'avancer mais continue si on survole plus le point.
+
+Le CSS a été principalement généré avec, puis ajusté pour correspondre à l’identité visuelle du projet.
+
+Enfin, pour le JavaScript/D3, ChatGPT m’a aidé ponctuellement sur des fonctions utilitaires et des choix d’implémentation (ex. clamp, shuffle déterministe/Fisher-Yates, correction d'erreur et aide à la compréhension), tandis que la logique globale, l’intégration des données et la direction artistique restent basées sur mes propres décisions et itérations. Exemple de prompt utilisé: Peut tu me créer un bouton information près du titre? [+ tout le code lui a été fourni]
+
+## Remerciement
+Je voulais surtout remercier Florian Rieder, Nicolas Bovet, Valentine Cuenot, Chloé Chaudet et Théo Rochat pour leurs retours lors de la réalisation de ce travail.
